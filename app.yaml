@@ -1,0 +1,13 @@
+runtime: python39
+
+handlers:
+#   # This configures Google App Engine to serve the files in the app's static
+#   # directory.
+
+- url: /assets
+  static_dir: static
+  secure: always
+
+- url: .*
+  script: auto
+  secure: always
